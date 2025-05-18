@@ -58,6 +58,11 @@ button {
     color: #FFFCF8;
     font-weight: 900;
 }
+
+button:hover {
+    background-color: #C39B7F;
+}
+
 /* Header */
 .top__logo__img {
     width: 6.6875rem;
