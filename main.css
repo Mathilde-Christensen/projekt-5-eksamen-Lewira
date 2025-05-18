@@ -138,6 +138,78 @@ button:hover {
 .forside__butikken__p {
     padding: 15px 0px;
 }
+
+.forside__find-gavekurv{
+    width:100%;
+    height:500px;
+    position:relative;
+    background-color:#84917F;
+    padding:2rem 1rem;
+}
+
+.forside__find-gavekurv__h2{
+    color:#FFFCF8;
+    text-align:center;
+    margin-bottom:1rem;
+}
+
+.forside__find-gavekurv__galleri{
+    overflow-x:auto;
+    padding:0 2rem;
+}
+
+.forside__find-gavekurv__liste{
+    display:flex;
+    gap: 1rem;
+    overflow:auto;
+    list-style:none;
+    padding:0;
+    margin:0;
+
+}
+
+.forside__find-gavekurv__item{
+    flex: 0 0 auto;
+    min-width:250px;
+    background-color: #D9C4B0;
+    padding:1rem;
+    border-radius:1rem;
+    text-align:center;
+    box-shadow: 0 4px 8px #000;
+}
+
+.forside__find-gavekurv h3{
+    margin: 0.5 rem 0 0.25rem;
+    font-size:1.1rem;
+}
+
+.forside__find-gavekurv__button{
+    background-color:#84917F;
+    color:#FFFCF8;
+    border:none;
+    padding:0.5rem 1rem;
+    cursor:pointer;
+}
+
+#galleri__prevButton, #galleri__nextButton{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background:none;
+    border:none;
+    font-size:2rem;
+    color:#FFFCF8;
+    z-index: 1;
+}
+
+#galleri__prevButton{
+    left:1rem;
+}
+
+#galleri__nextButton{
+    right:1rem;
+}
+
 @media (min-width: 600px) {
     
     h1 {
