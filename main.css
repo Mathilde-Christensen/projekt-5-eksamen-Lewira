@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+    /* at padding og border bliver integreret i elementets samlede bredde og højde på hele siden, nemmer at arbejde med */
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: #210700;
+
+font-family: Merriweather;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+h2 {
+    color: #210700;
+    font-family: Merriweather;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h3 {
+    color: #210700;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p {
+    color: #210700;
+    font-family: Inter;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.875rem; /* 140% */
+}
+
+a {
+    text-decoration: none;
+    color: #210700;;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    width: 102px;
+    height: 30.108px;
+    border-radius: 33px;
+    background: #72483C;
+    border: 0px;
+    color: #210700;
+    font-family: Inter;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.875rem;
+    color: #FFFCF8;
+    font-weight: 900;
+}
+
+/* Header */
+.top__logo__img {
+    width: 6.6875rem;
+    height: 1.9375rem;
+    margin-top: 8px;
+}
+
+.header__top__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.header__top {
+    background: #84917F;
+    width: 100%;
+    height: 48px;
+}
+
+.header__desktop {
+    display: none;
+}
+
+.header__mobil__bottom {
+    width: 100%;
+    height: 15px;
+    background: #D9C4B0;
+}
+
+/* hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 17.5rem;
+    overflow: hidden;
+    background-color: #D9C4B0;
+}
+
+.hero__billede__disktop {
+    display: none;
+}
+
+.hero__billede__mobil {
+    width: 100%;
+    opacity: 0.3;
+    display: block;
+    position: absolute;
+    object-fit: cover;
+}
+
+.hero__text {
+    width: 100%;
+    height: 17.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.hero__p {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+/*forside design selv*/
+
+.forside__designselv__tekst {
+    margin: 30px 20px 15px 20px;
+}
+
+.forside__designselv__p {
+    padding: 15px 0px;
+}
+
+.placeholder__forside__img {
+    width: 100%;
+    padding: 0px 20px 15px 20px;
+}
+
+/* forside butikken*/
+
+.forside__butikken__img {
+    width: 100%;
+    padding: 0px 20px 15px 20px;
+}
+
+.forsiden__butikken__tekst {
+    margin: 0px 20px 15px 20px;
+}
+
+.forside__butikken__p {
+    padding: 15px 0px;
+}
+
+@media (min-width: 600px) {
+    
+    h1 {
+        color: #000;
+        font-family: Merriweather;
+        font-size: 2.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    h2 {
+        color: #210700;
+        font-family: Merriweather;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    h3 {
+        color: #210700;
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    p {
+        color: #210700;
+        font-family: Inter;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1rem; /* 150% */
+    }
+
+    button {
+        width: 130px;
+        height: 39px;
+        font-size: 0.8rem;
+    }
+
+    /* hero */
+    .hero {
+        height: 27rem;
+    }
+
+    .hero__text {
+        width: 100%;
+        height: 27rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        color: #000;
+        font-family: Merriweather;
+        font-size: 4.375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    h2 {
+        color: #210700;
+        font-family: Merriweather;
+        font-size: 2.8125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    h3 {
+        color: #210700;
+        font-family: Inter;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    p {
+        color: #210700;
+        font-family: Inter;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.875rem; /* 150% */
+    }
+
+    button {
+        width: 200px;
+        height: 59px;
+        font-size: 1rem;
+    }
+
+    /*header*/
+    .top__logo__img {
+        width: 182px;
+        height: 53px;
+        margin-top: 18px;
+    }
+    
+    .header__top__logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header__top {
+        background: #84917F;
+        width: 100%;
+        height: 90px;
+    }
+    
+    .header__desktop {
+        display: block;
+    }
+    
+    .header__mobil__bottom {
+        display: none;
+    }
+
+    .header__desktop__bottom {
+        width: 100%;
+        height: 50px;
+        background: #D9C4B0;
+    }
+
+    .nav__desktop__li:hover {
+        color: #72483C;
+        font-weight: 900;
+    }
+
+    .header__desktop__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .nav__desktop__dropdown {
+        position: relative;
+    }
+
+    .desktop__dropdown__link:hover {
+        color: #72483C;
+        font-weight: 900;
+    }
+
+    .header__desktop__ul {
+        display: flex;
+        gap: 30px;
+        margin-top: 15px;
+    }
+    
+    .desktop__dropdown__ul {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        border-radius: 1.25rem;
+        font-size: 0.8rem;
+    }
+
+    .desktop__dropdown__li {
+        padding: 5px 0px;
+    }
+
+    .desktop__dropdown__link:hover {
+        color: #72483C;
+        font-weight: 900;
+    }
+
+    .nav__desktop__dropdown:hover .desktop__dropdown__ul {
+        display: block;
+    }
+
+    /* hero */
+
+    .hero__billede__mobil {
+        display: none;
+    }
+
+    .hero__billede__disktop {
+        width: 100%;
+        opacity: 0.3;
+        display: block;
+        position: absolute;
+        object-fit: cover;
+    }
+
+    .hero {
+        height: 39rem;
+    }
+
+    .hero__text {
+        width: 100%;
+        height: 27rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 60px;
+    }
+
+}
