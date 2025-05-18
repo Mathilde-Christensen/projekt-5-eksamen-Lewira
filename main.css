@@ -199,7 +199,6 @@ button:hover {
     border:none;
     font-size:2rem;
     color:#FFFCF8;
-    z-index: 1;
 }
 
 #galleri__prevButton{
