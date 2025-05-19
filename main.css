@@ -504,6 +504,7 @@ button:hover {
     .nav__desktop__dropdown:hover .desktop__dropdown__ul {
         display: block;
     }
+
     /* hero */
     .hero__billede__mobil {
         display: none;
