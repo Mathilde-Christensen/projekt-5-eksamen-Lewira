@@ -28,13 +28,7 @@
                 <!-- Mathilde -->  
                 <div id="soegefelt">
                     <button id="soegefeltButton" onclick="soeFeltIndput()"><img class="soegefeltBillede" src="billeder/soegikon.webp" alt="forstørrelsslag som søge ikon"></button>
-    
-                    <div id="soegBoks" style="display: none;">
-                        <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;">x</button>
-                        <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
-    
-                        <ul id="soegeResultater"></ul>
-                    </div>    
+       
                 </div>
             </div>
         </div>
@@ -66,6 +60,14 @@
 
     </header>
     <main>
+
+        <div id="soegBoks" style="display: none;">
+            <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;">x</button>
+            <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
+
+            <ul id="soegeResultater"></ul>
+        </div> 
+
         <div class="hero">
             <img class="hero__billede__disktop" src="billeder/hero__frontbage__desktop.jpg" alt="billede af to vinglas fyldt med kold æblecider">
             <img class="hero__billede__mobil" src="billeder/hero__frontpage__mobil.jpg" alt="billede af to vinglas fyldt med kold æblecider">

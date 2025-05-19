@@ -50,6 +50,7 @@ ul {
     list-style-type: none;
 }
 
+
 button {
     width: 102px;
     height: 30.108px;
@@ -116,6 +117,55 @@ button:hover {
     display: flex;
     justify-content: space-around;
 }
+
+
+#lukKnap {
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    width: 30%;
+    height: 0px;
+    border-radius: 0px;
+}
+
+#indputFelt {
+    position: absolute;
+    border: #210700;
+    width: 100%;
+    z-index: 100;
+    background-color: #FFFCF8;
+    color: #210700;
+    font-family: Inter;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 0.875rem; /* 140% */
+    padding: 10px;
+}
+
+#soegeResultater {
+    position: absolute;
+    z-index: 10;
+    background-color: #FFFCF8;
+    color: #210700;
+    font-family: Inter;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.875rem; /* 140% */
+    margin: 35px 0px 0px 0px;
+    width: 100%;
+}
+
+#soegeResultater li {
+    padding: 15px;
+}
+
+#soegeResultater li a:hover {
+    color: #72483C;
+    font-weight: 900;
+}
+
 
 /* hero */
 .hero {
