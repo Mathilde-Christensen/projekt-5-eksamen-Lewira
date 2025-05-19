@@ -175,7 +175,7 @@ button:hover {
     height:500px;
     position:relative;
     background-color:#84917F;
-    padding:2rem 1rem;
+    padding:2rem 0 0 1.2rem;
 }
 
 .forside__find-gavekurv__h2{
@@ -186,7 +186,6 @@ button:hover {
 
 .forside__find-gavekurv__galleri{
     height:100%;
-    overflow-x:auto;
     position: relative;
 }
 
@@ -196,8 +195,9 @@ button:hover {
     top:0;
     right:0;
     width:40px;
-    height:100%;
+    height:350px;
     pointer-events: none;
+    background: linear-gradient(to right, #84917F00 0%, #84917FFF 100%);
 }
 
 .forside__find-gavekurv__liste{
@@ -216,7 +216,9 @@ button:hover {
     flex-direction:column;
     background-color: #D9C4B0;
     border-radius:1rem;
+    overflow:hidden;
     box-shadow: 0 4px 8px #000;
+    
 }
 
 .forside__find-gavekurv__billede-wrapper{
@@ -247,9 +249,14 @@ button:hover {
 
 }
 
+.udforsk__knap{
+    display: block;
+    margin: 0 auto;
+}
+
 #galleri__prevButton, #galleri__nextButton{
     position:absolute;
-    top:80%;
+    top:90%;
     transform: translateY(-50%);
     background:none;
     border:none;
