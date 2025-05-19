@@ -185,9 +185,19 @@ button:hover {
 }
 
 .forside__find-gavekurv__galleri{
-    height:400px;
+    height:100%;
     overflow-x:auto;
-    margin:0 5px 0 0;
+    position: relative;
+}
+
+.forside__find-gavekurv__galleri::after{ /*denne fader billedet til højre*/
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    width:40px;
+    height:100%;
+    pointer-events: none;
 }
 
 .forside__find-gavekurv__liste{
