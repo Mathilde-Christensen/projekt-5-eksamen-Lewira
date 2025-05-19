@@ -108,3 +108,59 @@ function filterLinks() { //Funktionen starter når man skriver i inputfeltet ( o
         }
     }
 }
+
+function soeFeltIndputDesktop() {
+    let indputFeltDesktop = document.getElementById("indputFeltDesktop"); 
+    let lukKnapDesktop = document.getElementById("lukKnapDesktop"); 
+    let soegefeltButtonDesktop = document.getElementById("soegefeltButtonDesktop");
+    let listeDesktop = document.getElementById("soegeResultaterDesktop"); 
+    let soegBoksDesktop = document.getElementById("soegBoksDesktop");
+
+    if (indputFeltDesktop.style.display === "none") {
+        indputFeltDesktop.style.display = "block";  
+        lukKnapDesktop.style.display = "block";  
+        soegBoksDesktop.style.display = "block";
+        soegefeltButtonDesktop.style.display = "none";
+    } else {
+        indputFeltDesktop.style.display = "none"; 
+        lukKnapDesktop.style.display = "none";  
+        soegefeltButtonDesktop.style.display = "block";
+        soegBoksDesktop.style.display = "none";
+        indputFeltDesktop.value = ""; 
+        listeDesktop.innerHTML = "";  
+    }
+}
+
+function filterLinksDesktop() {
+    let inputDesktop = document.getElementById("indputFeltDesktop").value.toLowerCase();
+    let listeDesktop = document.getElementById("soegeResultaterDesktop");
+    listeDesktop.innerHTML = "";
+
+    if (inputDesktop === "") {
+        listeDesktop.innerHTML = "";
+        return;
+    }
+
+    let resultaterDesktop = [];
+
+    for (let i = 0; i < soegResultater.length; i++) {
+        if (soegResultater[i].displayName.toLowerCase().includes(inputDesktop)) {
+            resultaterDesktop.push(soegResultater[i]);
+        }
+    }
+
+    if (resultaterDesktop.length === 0) {
+        listeDesktop.innerHTML = `<li class="no-result">
+        Der blev desværre ikke fundet noget resultat. Kontrollér stavemåde eller brug et andet udtryk
+        </li>`;
+    } else {
+        for (let i = 0; i < resultaterDesktop.length; i++) {
+            let li = document.createElement("li");
+            let a = document.createElement("a");
+            a.href = resultaterDesktop[i].link;
+            a.textContent = resultaterDesktop[i].displayName;
+            li.appendChild(a);
+            listeDesktop.appendChild(li);
+        }
+    }
+}

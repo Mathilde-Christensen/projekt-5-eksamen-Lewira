@@ -24,11 +24,16 @@
 
 
             <div class="header__mobil__top">
-            
-                <!-- Mathilde -->  
-                <div id="soegefelt">
-                    <button id="soegefeltButton" onclick="soeFeltIndput()"><img class="soegefeltBillede" src="billeder/soegikon.webp" alt="forstørrelsslag som søge ikon"></button>
-       
+
+                <div class="header__mobil__ikoner">
+                    <!-- Mathilde -->  
+                    <div id="soegefelt">
+                        <button id="soegefeltButton" onclick="soeFeltIndput()"><img class="soegefeltBillede" src="billeder/soegikon.webp" alt="forstørrelsslag som søge ikon"></button>
+                    </div>
+
+                    <div class="desktop__ikoner__kurv">
+                        <img class="desktop__kurv__img" src="billeder/kurvikon.webp" alt="ikon af kurv">
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,7 +42,9 @@
         <div class="header__mobil__bottom"></div>
 
         <div class="header__desktop">
+            
             <div class="header__desktop__bottom">
+
                 <nav class="header__desktop__nav">
                     <ul class="header__desktop__ul">
                         <li class="nav__desktop__dropdown">
@@ -53,6 +60,20 @@
                         <li class="nav__desktop__li">Kontakt</li>
                     </ul>
                 </nav>
+
+                <div class="header__desktop__ikoner">
+
+                    <!-- Mathilde -->  
+                    <div id="soegefeltDesktop">
+                        <button id="soegefeltButtonDesktop" onclick="soeFeltIndputDesktop()"><img class="soegefeltBilledeDesktop" src="billeder/soegikon.webp" alt="forstørrelsslag som søge ikon"></button>
+                    </div>
+
+                    <div class="desktop__ikoner__kurv">
+                        <img class="desktop__kurv__img" src="billeder/kurvikon.webp" alt="ikon af kurv">
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
@@ -61,11 +82,19 @@
     </header>
     <main>
 
+        <!-- Mathilde --> 
         <div id="soegBoks" style="display: none;">
             <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;">x</button>
             <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
 
             <ul id="soegeResultater"></ul>
+        </div> 
+
+        <div id="soegBoksDesktop" style="display: none;">
+            <button id="lukKnapDesktop" onclick="soeFeltIndputDesktop()" style="display: none;">x</button>
+            <input id="indputFeltDesktop" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinksDesktop()">
+
+            <ul id="soegeResultaterDesktop"></ul>
         </div> 
 
         <div class="hero">
