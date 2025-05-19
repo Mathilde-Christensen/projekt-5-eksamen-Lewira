@@ -1,23 +1,23 @@
-function soeFeltIndput() { //funktionen kører, når knappen "Søg"bliver trykket
-    let indputFelt = document.getElementById("indputFelt"); //Gemmer elementet i en variabel, gør det muligt at manipulere i elementer fra HTML (dom)
-    let lukKnap = document.getElementById("lukKnap"); //Gemmer elementet i en variabel, gør det muligt at manipulere i elementer fra HTML (dom)
+function soeFeltIndput() { 
+    let indputFelt = document.getElementById("indputFelt"); 
+    let lukKnap = document.getElementById("lukKnap"); 
     let soegefeltButton = document.getElementById("soegefeltButton");
-    let liste = document.getElementById("soegeResultater"); // Henter søgeresultat-listen
+    let liste = document.getElementById("soegeResultater"); 
     let soegBoks = document.getElementById("soegBoks");
 
 
     if (indputFelt.style.display === "none") {
-        indputFelt.style.display = "block";  // Gør søgefeltet synligt
-        lukKnap.style.display = "block";  // Gør X-knappen synlig
+        indputFelt.style.display = "block";  
+        lukKnap.style.display = "block";  
         soegBoks.style.display = "block";
         soegefeltButton.style.display = "none";
     } else {
-        indputFelt.style.display = "none";  // Skjul feltet
-        lukKnap.style.display = "none";  // Skjul knappen
+        indputFelt.style.display = "none"; 
+        lukKnap.style.display = "none";  
         soegefeltButton.style.display = "block";
         soegBoks.style.display = "none";
-        indputFelt.value = ""; //indputfeltet bliver tomt når man lukker søgefeltet ned iegn
-        liste.innerHTML = "";  //fjerner søgeresultaterne
+        indputFelt.value = ""; 
+        liste.innerHTML = "";  
     }
 }
 
