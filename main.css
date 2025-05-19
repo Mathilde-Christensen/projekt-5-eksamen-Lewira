@@ -122,17 +122,17 @@ button:hover {
 #lukKnap {
     background-color: transparent;
     position: absolute;
-    z-index: 10;
-    width: 30%;
-    height: 0px;
+    z-index: 100;
     border-radius: 0px;
+    color: #210700;
+    margin: 0% 80%;
 }
 
 #indputFelt {
     position: absolute;
     border: #210700;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
     background-color: #FFFCF8;
     color: #210700;
     font-family: Inter;
@@ -151,9 +151,9 @@ button:hover {
     font-family: Inter;
     font-size: 0.625rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 0.875rem; /* 140% */
-    margin: 35px 0px 0px 0px;
+    margin: 34px 0px 0px 0px;
     width: 100%;
 }
 
@@ -165,6 +165,8 @@ button:hover {
     color: #72483C;
     font-weight: 900;
 }
+
+
 
 
 /* hero */
