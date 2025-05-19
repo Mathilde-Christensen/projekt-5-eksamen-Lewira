@@ -5,6 +5,10 @@
     padding: 0px;
 }
 
+body    {
+    overflow-x:hidden;
+}
+
 h1 {
     color: #210700;
     font-family: Merriweather;
@@ -227,6 +231,7 @@ button:hover {
     background-color:#84917F;
     padding:2rem 0 0 1rem;
     margin-bottom:1.2rem;
+    overflow-x:hidden;
 }
 
 .forside__find-gavekurv__h2{
@@ -255,6 +260,9 @@ button:hover {
     display:flex;
     gap: 1rem;
     list-style:none;
+    transition: transform 0.4s ease;
+    will-change: transform;
+    flex-wrap: nowrap;
 
 }
 
