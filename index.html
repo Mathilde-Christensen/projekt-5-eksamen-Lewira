@@ -22,8 +22,23 @@
                 <img class="top__logo__img" src="billeder/logo__lewira.png" alt="Lewiras logo">
             </div>
         </div>
-        <div class="header__mobil__top"></div>
+
+        <div class="header__mobil__top">
+            <!-- Mathilde -->  
+            <div id="soegefelt">
+                <button id="soegefeltButton" onclick="soeFeltIndput()"><img class="soegefeltBillede" src="billeder/soegikon.webp" alt="forstørrelsslag som søge ikon"></button>
+
+                <div id="soegBoks" style="display: none;">
+                    <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;"><img class="lukKnapBillede" src="billeder/luknap.webp" alt="kryds"></button>
+                    <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
+
+                    <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
+                </div>    
+            </div>
+        </div>
+
         <div class="header__mobil__bottom"></div>
+
         <div class="header__desktop">
             <div class="header__desktop__bottom">
                 <nav class="header__desktop__nav">
@@ -42,19 +57,9 @@
                     </ul>
                 </nav>
             </div>
+
         </div>
 
-        <!-- Mathilde -->  
-        <div id="soegefelt">
-            <button id="soegefeltButton" onclick="soeFeltIndput()"><img class="soegefeltBillede" src="billeder/soegikon.webp" alt="forstørrelsslag som søge ikon"></button>
-
-            <div id="soegBoks" style="display: none;">
-                <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;"><img class="lukKnapBillede" src="billeder/luknap.webp" alt="kryds"></button>
-                <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
-
-                <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
-            </div>    
-        </div>
 
     </header>
     <main>
