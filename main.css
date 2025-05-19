@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 h1 {
     color: #210700;
     font-family: Merriweather;
@@ -12,6 +13,7 @@ h1 {
     font-weight: 700;
     line-height: normal;
 }
+
 h2 {
     color: #210700;
     font-family: Merriweather;
@@ -20,6 +22,7 @@ h2 {
     font-weight: 700;
     line-height: normal;
 }
+
 h3 {
     color: #210700;
     font-family: Inter;
@@ -28,6 +31,7 @@ h3 {
     font-weight: 700;
     line-height: normal;
 }
+
 p {
     color: #210700;
     font-family: Inter;
@@ -36,13 +40,16 @@ p {
     font-weight: 400;
     line-height: 0.875rem; /* 140% */
 }
+
 a {
     text-decoration: none;
     color: #210700;;
 }
+
 ul {
     list-style-type: none;
 }
+
 button {
     width: 102px;
     height: 30.108px;
@@ -69,18 +76,22 @@ button:hover {
     height: 1.9375rem;
     margin-top: 8px;
 }
+
 .header__top__logo {
     display: flex;
     justify-content: center;
 }
+
 .header__top {
     background: #84917F;
     width: 100%;
     height: 48px;
 }
+
 .header__desktop {
     display: none;
 }
+
 .header__mobil__bottom {
     width: 100%;
     height: 15px;
@@ -91,11 +102,18 @@ button:hover {
     background-color: transparent;
     position: absolute;
     z-index: 10;
+    width: 30%;
+    height: 0px;
     border-radius: 0px;
 }
 
 .soegefeltBillede {
     width: 20%;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* hero */
@@ -359,6 +377,11 @@ button:hover {
     .header__mobil__bottom {
         display: none;
     }
+
+    .header__mobil__top {
+        display: none;
+    }
+
     .header__desktop__bottom {
         width: 100%;
         height: 50px;
