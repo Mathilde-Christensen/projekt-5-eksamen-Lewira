@@ -348,7 +348,7 @@ button:hover {
 
 /*-sek*/
 .footer {
-    background-color: #FFFEF9;
+    background-color: #D9C4B0;
     border-top: 1px solid #FFFEF9;
     flex-grow: 1;
 }
@@ -441,6 +441,14 @@ footer details[open] .footer-indhold {
     margin-top: 20px;
     margin-bottom: 7%;
 }
+
+.footer_socialemedier {
+    width:150px;
+    height: 50px;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
 
 
 /*design selv kurv*/
@@ -869,7 +877,7 @@ footer details[open] .footer-indhold {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        background-color: #f9f9f9;
+        background-color: #D9C4B0;
         font-family: Arial, sans-serif;
         color: #000;
     }
