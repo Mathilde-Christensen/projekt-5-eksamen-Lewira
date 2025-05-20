@@ -967,6 +967,11 @@ footer details[open] .footer-indhold {
         margin: 0px 0px 0px 5px;
     }
 
+    .designselv__udvalg {
+        display: flex;
+        flex-direction: row;
+    }
+
 
     /* footer */
 
