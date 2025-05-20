@@ -654,8 +654,26 @@ footer details[open] .footer-indhold {
         width: auto;
         margin: 20px;
     }
-    
+
+    .udvalg__informations__boks {
+        width: 423px;
+        height: 550px;
+    }
+
+    .udvalg__img__h3 {
+        width: 423px;
+        height: 448px;
+    }
+
+    .designselv__udvalg__h3 {
+        margin: 5px 0px 5px 5px;
+    }
+
+    .designselv__udvalg__p {
+        margin: 0px 0px 0px 5px;
+    }
 }
+
 @media (min-width: 1024px) {
     h1 {
         color: #000;
@@ -690,8 +708,8 @@ footer details[open] .footer-indhold {
         line-height: 1.875rem; /* 150% */
     }
     button {
-        width: 200px;
-        height: 59px;
+        width: 185px;
+        height: 50px;
         font-size: 1rem;
     }
     /*header*/
@@ -931,6 +949,24 @@ footer details[open] .footer-indhold {
         height: 30px;
         width: auto;
         margin: 20px;
+    }
+
+    .udvalg__informations__boks {
+        width: 443px;
+        height: 590px;
+    }
+
+    .udvalg__img__h3 {
+        width: 443px;
+        height: 469px;
+    }
+
+    .designselv__udvalg__h3 {
+        margin: 5px 0px 0px 5px;
+    }
+
+    .designselv__udvalg__p {
+        margin: 0px 0px 0px 5px;
     }
 
 
