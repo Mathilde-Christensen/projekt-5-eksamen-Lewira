@@ -476,6 +476,34 @@ footer details[open] .footer-indhold {
     color: #273AAA;
 }
 
+/* designselv menu*/
+.designselv__menu__button {
+    color: #72483C;
+    font-family: Inter;
+    font-size: 0.55rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.875rem; /* 140% */
+    background-color: transparent;
+    height: 30px;
+    width: auto;
+    margin: 5px;
+}
+
+.designselv__menu__button:hover {
+    font-weight: 900;
+    background-color: transparent;
+}
+
+.designselv__menu {
+    background-color: #FFFCF8;
+    border-bottom: 0.5px solid #72483C;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
 @media (min-width: 600px) {
     
     h1 {
@@ -529,6 +557,18 @@ footer details[open] .footer-indhold {
         flex-direction: column;
         justify-content: center;
         margin: 30px;
+    }
+
+    /* designselv menu*/
+    .designselv__menu__button {
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1rem; /* 150% */
+        background-color: transparent;
+        height: 30px;
+        width: auto;
+        margin: 20px;
     }
     
 }
@@ -797,6 +837,17 @@ footer details[open] .footer-indhold {
         width: 50%;
     }
 
+    /* designselv menu*/
+    .designselv__menu__button {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.875rem; /* 150% */
+        background-color: transparent;
+        height: 30px;
+        width: auto;
+        margin: 20px;
+    }
 
 
     /* footer */
