@@ -633,8 +633,27 @@ footer details[open] .footer-indhold {
 
     /*find-gavekurv*/
     .forside__find-gavekurv{
-        height:550px;
+        height:625px;
         margin-bottom:1.2rem;
+    }
+
+    .forside__find-gavekurv__item{
+        min-width:250px;
+        height:425px;
+        box-shadow: 0 4px 4px #615959;
+        margin:1rem 0.5rem;
+        
+    }
+    
+    .forside__find-gavekurv__billede-wrapper{
+        width:100%;
+        height:70%;
+    }
+
+    
+    .forside__find-gavekurv__pris{
+        padding-bottom:0.8rem;
+    
     }
     
 
@@ -938,10 +957,12 @@ footer details[open] .footer-indhold {
         width: 50%;
     }
 
-    /*forside find rette kurv*/
+
+     /*find-gavekurv*/
 
     #galleri__prevButton,
     #galleri__nextButton{
+        padding:1rem;
         font-size:3rem;
     }
 
