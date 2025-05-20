@@ -346,6 +346,25 @@ button:hover {
     right:1rem;
 }
 
+/* designselv menu*/
+.designselv__menu__button {
+    color: #72483C;
+    font-family: Inter;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.875rem; /* 140% */
+    background-color: transparent;
+    height: 30px;
+    width: auto;
+    margin: 5px;
+}
+
+.designselv__menu {
+    background-color: #FFFCF8;
+    border-bottom: 1px solid #72483C;
+}
+
 @media (min-width: 600px) {
     
     h1 {
