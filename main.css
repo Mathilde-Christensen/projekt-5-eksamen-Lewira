@@ -514,6 +514,69 @@ footer details[open] .footer-indhold {
     justify-content: center;
 }
 
+.udvalg__informations__boks {
+    border-radius: 20px;
+    background: #FFFCF8;
+    box-shadow: 1px 4px 14.7px 0px rgba(0, 0, 0, 0.25);
+    margin: 20px 15px;
+}
+
+.designselv__udvalg__img {
+    width: 100%;
+}
+
+.img__informations__boks {
+    position: relative;
+}
+
+.udvalg__img__h3 {
+    position: absolute;
+    width: 331px;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px;
+    background: rgba(181, 120, 91, 0.70);
+    color: #FFFCF8;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1rem; /* 140% */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    inset: 0; 
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.img__informations__boks:hover .udvalg__img__h3 {
+    opacity: 1;
+}
+
+.udvalg__informations__boks {
+    width: 331px;
+    height: 440px;
+}
+
+.designselv__udvalg__h3 {
+    margin: 5px;
+}
+
+.designselv__udvalg__p {
+    margin: 0px 0px 5px 5px;
+}
+
+.udvalg__button__box {
+    display: flex;
+    justify-content: center;
+}
+
+.designselv__udvalg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media (min-width: 600px) {
     
