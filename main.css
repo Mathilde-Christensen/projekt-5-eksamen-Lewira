@@ -631,6 +631,13 @@ footer details[open] .footer-indhold {
         margin: 30px;
     }
 
+    /*find-gavekurv*/
+    .forside__find-gavekurv{
+        height:550px;
+        margin-bottom:1.2rem;
+    }
+    
+
     /*designselv kurv*/
     .designselv{
         flex-direction: row;
@@ -929,6 +936,13 @@ footer details[open] .footer-indhold {
 
     .forside__designselv__tekst {
         width: 50%;
+    }
+
+    /*forside find rette kurv*/
+
+    #galleri__prevButton,
+    #galleri__nextButton{
+        font-size:3rem;
     }
 
     /* forside butikken*/
