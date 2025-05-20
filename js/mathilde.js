@@ -165,3 +165,16 @@ function filterLinksDesktop() {
     }
 }
 
+function designSelvMenu(clickedButton) {
+    const targetId = clickedButton.getAttribute("data-target");
+  
+    const galleries = document.querySelectorAll(".designselv__gallery");
+    galleries.forEach(gallery => {
+      gallery.style.display = "none";
+    });
+  
+    const targetDiv = document.getElementById(targetId);
+    if (targetDiv) {
+      targetDiv.style.display = "block";
+    }
+  }
