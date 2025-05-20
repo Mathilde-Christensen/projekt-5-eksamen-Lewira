@@ -346,9 +346,9 @@ button:hover {
     right:1rem;
 }
 
-/*footer*/
+/*-sek*/
 .footer {
-    background-color: #FFFEF9;
+    background-color: #D9C4B0;
     border-top: 1px solid #FFFEF9;
     flex-grow: 1;
 }
@@ -362,15 +362,15 @@ button:hover {
     padding-left: 20px;
     margin: 0;
     font-size: 1rem;
-    color: #273AAA;
+    color: #000;
 }
 
 .footer-knap:hover {
-    color: #FFB6C1;
+    color: #72483C;
 }
 
 
-.om_gt,.span__knap.f{
+.kontakt_liwira,.span__knap.f{
     padding-top:30px;
 }
 
@@ -418,62 +418,73 @@ footer details[open] .footer-indhold {
 
 .footer-indhold ul li a:hover {
     text-decoration: none;
-    color: #FFB6C1;
+    color: #72483C;
 }
 
 
-.om_gt, .folg_os{
+.kontakt_liwira, .abningstider_liwira{
     font-family: Archivo;
-    color:#273AAA;
+    color:#000;
 }
 
-.footer-sektion p {
-    font-family: Archivo;
-    font-size: 1rem;
-}
-
-.kontakt_os {
-    font-family: Archivo;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #273AAA;
-    font-size: 1.25rem;
-    padding-left: 20px;
-    margin-bottom: 5%;
-    font-weight: bold;
-    text-align: left;
-}
-
-.footer-sektion.kontakt-information {
-    margin-bottom: 10%;
-}
-
-.footer-sektion.kontakt-information p {
-    margin-bottom: 3%;
-    padding-left: 20px;
-}
 
 .footer_logo {
     width:150px;
-    height:20px;
+    height: 40px;
     margin-top: 6%;
     margin-bottom: 5%;
     padding-left: 17px;
 }
 
-.footer-sektion.kontakt p {
-    padding-left: 20px;
-}
 
 #cvr {
     margin-top: 20px;
     margin-bottom: 7%;
 }
 
-#faq {
-    margin-top: 30px;
-    color: #273AAA;
+.footer_socialemedier {
+    width:150px;
+    height: 50px;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+
+
+/*design selv kurv*/
+.designselv{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap:2rem;
+    background-color: rgba(217, 196, 176, 0.25);
+}
+
+.designselv__billede-container{
+    text-align: center;
+}
+
+.dingavekurv__billede{
+    max-width:100%;
+    height:auto;
+}
+
+.designselv__valgt{
+    background: #FFFCF8;
+    padding:1.5rem;
+    border-radius: 1rem;
+}
+
+.designselv__items{
+    list-style: none;
+    padding:0;
+}
+
+.designselv__items li{
+    display: flex;
+    justify-content: space-between;
+    margin:0.5rem;
+    border-bottom: 1px solid #210700;
 }
 
 /* designselv menu*/
@@ -620,6 +631,16 @@ footer details[open] .footer-indhold {
         flex-direction: column;
         justify-content: center;
         margin: 30px;
+    }
+
+    /*designselv kurv*/
+    .designselv{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .designselv__billede-container, .designselv__indhold{
+        flex:1;
     }
 
     /* designselv menu*/
@@ -919,19 +940,9 @@ footer details[open] .footer-indhold {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        background-color: #f9f9f9;
+        background-color: #D9C4B0;
         font-family: Arial, sans-serif;
         color: #000;
-    }
-    
-    .footer-sektion {
-        display: flex;
-        flex: 1;
-        margin-right: 20px;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex: 1;
     }
     
     .footer-sektion:last-child {
@@ -942,10 +953,10 @@ footer details[open] .footer-indhold {
         padding-top:15px;
     }
 
-    .om_gt,.folg_os{
+    .kontakt_liwira,.abningstider_liwira{
         font-size: 19px;
         font-weight: bold;
-        color: #273AAA;
+        color: #000;
         margin-bottom: 10px;
         padding-top:50px;
         padding-left:40px;
@@ -983,17 +994,7 @@ footer details[open] .footer-indhold {
         padding-top:10px;
         margin: 0;
     }
-    .kontakt_os{
-        font-family: Archivo;
-        font-size: 19px;
-        font-weight: bold;
-        color:#273AAA;
-        padding-top:60px;
-        padding-bottom:20px;
-    }
-    .footer-sektion.kontakt-information p{
-        margin-bottom:15px;
-    }
+    
     .footer_logo {
         width: 200px;
         height:70px;
@@ -1001,15 +1002,5 @@ footer details[open] .footer-indhold {
         padding-bottom:10px;
         margin:20px 0 7px 0;
     }
-    .footer-sektion.kontakt p{
-        padding-left:20px;
-        padding-top:0;
-    }
     
-    #faq {
-        color: #273AAA;
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
 }
