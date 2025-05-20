@@ -443,6 +443,42 @@ footer details[open] .footer-indhold {
 }
 
 
+/*design selv kurv*/
+.designselv{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap:2rem;
+    background-color: rgba(217, 196, 176, 0.25);
+}
+
+.designselv__billede-container{
+    text-align: center;
+}
+
+.dingavekurv__billede{
+    max-width:100%;
+    height:auto;
+}
+
+.designselv__valgt{
+    background: #FFFCF8;
+    padding:1.5rem;
+    border-radius: 1rem;
+}
+
+.designselv__items{
+    list-style: none;
+    padding:0;
+}
+
+.designselv__items li{
+    display: flex;
+    justify-content: space-between;
+    margin:0.5rem;
+    border-bottom: 1px solid #210700;
+}
+
 /* designselv menu*/
 .designselv__menu__button {
     color: #72483C;
@@ -524,6 +560,16 @@ footer details[open] .footer-indhold {
         flex-direction: column;
         justify-content: center;
         margin: 30px;
+    }
+
+    /*designselv kurv*/
+    .designselv{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .designselv__billede-container, .designselv__indhold{
+        flex:1;
     }
 
     /* designselv menu*/
