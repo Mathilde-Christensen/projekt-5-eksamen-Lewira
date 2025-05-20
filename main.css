@@ -234,6 +234,8 @@ button:hover {
     padding: 15px 0px;
 }
 
+/* forside find gavekurv*/
+
 .forside__find-gavekurv{
     width:100%;
     height:500px;
@@ -467,6 +469,14 @@ footer details[open] .footer-indhold {
     height:auto;
 }
 
+.designselv__titel{
+    padding-bottom:0.7rem;
+}
+
+.designselv__beskrivelse{
+    padding-bottom:1rem;
+}
+
 .designselv__valgt{
     background: #FFFCF8;
     padding:1.5rem;
@@ -484,6 +494,10 @@ footer details[open] .footer-indhold {
     margin:0.5rem;
     border-bottom: 1px solid #210700;
 }
+
+#tilfojTilKurv {
+    margin-top: 1rem;
+  }
 
 /* designselv menu*/
 .designselv__menu__button {
@@ -660,12 +674,18 @@ footer details[open] .footer-indhold {
     /*designselv kurv*/
     .designselv{
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
     }
 
-    .designselv__billede-container, .designselv__indhold{
-        flex:1;
+    .designselv__indhold{
+        margin-right:8px;
     }
+
+    #tilfojTilKurv {
+        margin-top: 1rem;
+    }
+
+    
 
     /* designselv menu*/
     .designselv__menu__button {
@@ -957,6 +977,10 @@ footer details[open] .footer-indhold {
         width: 50%;
     }
 
+    /*designselv kurv*/
+    .designselv__indhold{
+        margin-right:50px;
+    }
 
      /*find-gavekurv*/
 
