@@ -362,15 +362,15 @@ button:hover {
     padding-left: 20px;
     margin: 0;
     font-size: 1rem;
-    color: #273AAA;
+    color: #000;
 }
 
 .footer-knap:hover {
-    color: #FFB6C1;
+    color: #72483C;
 }
 
 
-.om_gt,.span__knap.f{
+.kontakt_liwira,.span__knap.f{
     padding-top:30px;
 }
 
@@ -418,13 +418,13 @@ footer details[open] .footer-indhold {
 
 .footer-indhold ul li a:hover {
     text-decoration: none;
-    color: #FFB6C1;
+    color: #72483C;
 }
 
 
-.om_gt, .folg_os{
+.kontakt_liwira, .folg_os{
     font-family: Archivo;
-    color:#273AAA;
+    color:#000;
 }
 
 .footer-sektion p {
@@ -437,7 +437,7 @@ footer details[open] .footer-indhold {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #273AAA;
+    color: #000;
     font-size: 1.25rem;
     padding-left: 20px;
     margin-bottom: 5%;
@@ -456,15 +456,12 @@ footer details[open] .footer-indhold {
 
 .footer_logo {
     width:150px;
-    height:20px;
+    height: 40px;
     margin-top: 6%;
     margin-bottom: 5%;
     padding-left: 17px;
 }
 
-.footer-sektion.kontakt p {
-    padding-left: 20px;
-}
 
 #cvr {
     margin-top: 20px;
@@ -473,7 +470,7 @@ footer details[open] .footer-indhold {
 
 #faq {
     margin-top: 30px;
-    color: #273AAA;
+    color: #000;
 }
 
 /* designselv menu*/
@@ -879,10 +876,10 @@ footer details[open] .footer-indhold {
         padding-top:15px;
     }
 
-    .om_gt,.folg_os{
+    .kontakt_liwira,.folg_os{
         font-size: 19px;
         font-weight: bold;
-        color: #273AAA;
+        color: #000;
         margin-bottom: 10px;
         padding-top:50px;
         padding-left:40px;
@@ -924,7 +921,7 @@ footer details[open] .footer-indhold {
         font-family: Archivo;
         font-size: 19px;
         font-weight: bold;
-        color:#273AAA;
+        color:#000;
         padding-top:60px;
         padding-bottom:20px;
     }
@@ -944,7 +941,7 @@ footer details[open] .footer-indhold {
     }
     
     #faq {
-        color: #273AAA;
+        color: #000;
         text-decoration: underline;
         cursor: pointer;
     }
