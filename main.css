@@ -480,8 +480,6 @@ button:hover {
         font-weight: 900;
     }
     .header__desktop__nav {
-        display: flex;
-        justify-content: center;
         align-items: center;
         color: #000;
         font-family: Inter;
@@ -489,6 +487,8 @@ button:hover {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        padding-left: 50px ;
+
     }
     .nav__desktop__dropdown {
         position: relative;
@@ -524,6 +524,11 @@ button:hover {
     .header__desktop__bottom {
         display: flex;
         justify-content: space-between;
+    }
+
+    .header__desktop__left {
+        width: 60px;
+        margin: 60px 0px 0px 0px;
     }
 
     .header__desktop__ikoner {
