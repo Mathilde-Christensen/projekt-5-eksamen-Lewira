@@ -14,6 +14,7 @@
     <script src="js/alice.js" defer></script>
     <script src="js/mathilde.js" defer></script>
     <script src="js/kirja.js" defer></script>
+    <script src="footer.js" defer></script>
 </head>
 <body>
     <header>
@@ -242,7 +243,52 @@
         </div>
     </main>
     
-    <footer>
+
+    <footer class="footer">
+        <div class="footer-sektion">
+            <div class="footer-knap" onclick="toggleCheckbox('girltalk-checkbox')">
+                <span class="span__knap f">+</span>
+                <h3 class="om_gt">Kontakt</h3>
+            </div>
+            <input type="checkbox" id="girltalk-checkbox" class="footer-checkbox">
+            <div id="girltalk-indhold" class="footer-indhold">
+                <ul>
+                    <li><a href="#">+45 2426 7971</a></li>
+                    <li><a href="#">kontakt@dinpejs.dk</a></li>
+                    <li><a href="#">Jernbanegade 16, 5550 Langeskov</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-sektion">
+            <div class="footer-knap" onclick="toggleCheckbox('follow-checkbox')">
+                <span class="span__knap">+</span>
+                <h3 class="folg_os">Åbningstider</h3>
+            </div>
+            <input type="checkbox" id="follow-checkbox" class="footer-checkbox">
+            <div id="follow-indhold" class="footer-indhold">
+                <ul>
+                    <li><a href="#">Man-fre 11:00-17:00</a></li>
+                    <li><a href="#">Lør 10:00-12:00</a></li>
+                    <li><a href="#">Søn lukket</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-sektion kontakt">
+            <img class="footer_logo" src="billeder/girltalk_logo.webp" alt="girltalks logo">
+            <p>Martinsvej 7, 1
+            <p>1926 Frederiksberg C</p>
+            <p id="cvr">CVR 30 14 53 48</p>
+        </div>
+    
+        <div class="footer-sektion kontakt-information">
+            <h3 class="kontakt_os">Kontakt os</h3>
+            <p>info@girltalk.dk</p>
+            <p>51 91 33 77</p>
+            <p>Telefontid mandag til torsdag kl. <br> 10.00 til 13.00</p>
+            <p id="faq"> GirlTalks FAQ Til Projektopgaver</p>
+        </div>
     </footer>
 
 </body>

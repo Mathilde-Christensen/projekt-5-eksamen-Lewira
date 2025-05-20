@@ -346,6 +346,136 @@ button:hover {
     right:1rem;
 }
 
+/*footer*/
+.footer {
+    background-color: #FFFEF9;
+    border-top: 1px solid #FFFEF9;
+    flex-grow: 1;
+}
+
+.footer-knap {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding-left: 20px;
+    margin: 0;
+    font-size: 1rem;
+    color: #273AAA;
+}
+
+.footer-knap:hover {
+    color: #FFB6C1;
+}
+
+
+.om_gt,.span__knap.f{
+    padding-top:30px;
+}
+
+.footer-checkbox {
+    display: none;
+}
+
+
+.footer-checkbox:checked ~ .footer-indhold {
+    display: block;
+}
+
+
+.footer-knap span {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+}
+
+
+.footer-indhold {
+    display: none;
+    padding-left: 60px;
+    font-size: 1.3rem;
+    padding-top: 5px;
+}
+
+footer details[open] .footer-indhold {
+    display: block;
+}
+
+.footer-indhold ul {
+    list-style: none;
+}
+
+.footer-indhold ul li {
+    margin-bottom: 8px;
+}
+
+.footer-indhold ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.footer-indhold ul li a:hover {
+    text-decoration: none;
+    color: #FFB6C1;
+}
+
+
+.om_gt, .folg_os{
+    font-family: Archivo;
+    color:#273AAA;
+}
+
+.footer-sektion p {
+    font-family: Archivo;
+    font-size: 1rem;
+}
+
+.kontakt_os {
+    font-family: Archivo;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #273AAA;
+    font-size: 1.25rem;
+    padding-left: 20px;
+    margin-bottom: 5%;
+    font-weight: bold;
+    text-align: left;
+}
+
+.footer-sektion.kontakt-information {
+    margin-bottom: 10%;
+}
+
+.footer-sektion.kontakt-information p {
+    margin-bottom: 3%;
+    padding-left: 20px;
+}
+
+.footer_logo {
+    width:150px;
+    height:20px;
+    margin-top: 6%;
+    margin-bottom: 5%;
+    padding-left: 17px;
+}
+
+.footer-sektion.kontakt p {
+    padding-left: 20px;
+}
+
+#cvr {
+    margin-top: 20px;
+    margin-bottom: 7%;
+}
+
+#faq {
+    margin-top: 30px;
+    color: #273AAA;
+}
+
 @media (min-width: 600px) {
     
     h1 {
@@ -668,5 +798,104 @@ button:hover {
     }
 
 
+
+    /* footer */
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: #f9f9f9;
+        font-family: Arial, sans-serif;
+        color: #000;
+    }
+    
+    .footer-sektion {
+        display: flex;
+        flex: 1;
+        margin-right: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex: 1;
+    }
+    
+    .footer-sektion:last-child {
+        margin-right: 0;
+    }
+
+    .footer-knap{
+        padding-top:15px;
+    }
+
+    .om_gt,.folg_os{
+        font-size: 19px;
+        font-weight: bold;
+        color: #273AAA;
+        margin-bottom: 10px;
+        padding-top:50px;
+        padding-left:40px;
+        
+    }
+    .footer-knap span {
+        display: none;
+    }   
+    
+    .footer-indhold {
+        display: block; 
+    }
+    
+    .footer-indhold ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-indhold ul li {
+        margin-bottom: 8px;
+    }
+    
+    .footer-indhold ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .kontakt {
+        text-align: left;
+        font-size: 16px;
+        gap:5px;
+    }
+    
+    .kontakt p {
+        padding-top:10px;
+        margin: 0;
+    }
+    .kontakt_os{
+        font-family: Archivo;
+        font-size: 19px;
+        font-weight: bold;
+        color:#273AAA;
+        padding-top:60px;
+        padding-bottom:20px;
+    }
+    .footer-sektion.kontakt-information p{
+        margin-bottom:15px;
+    }
+    .footer_logo {
+        width: 200px;
+        height:70px;
+        padding-top:40px;
+        padding-bottom:10px;
+        margin:20px 0 7px 0;
+    }
+    .footer-sektion.kontakt p{
+        padding-left:20px;
+        padding-top:0;
+    }
+    
+    #faq {
+        color: #273AAA;
+        text-decoration: underline;
+        cursor: pointer;
+    }
 
 }
