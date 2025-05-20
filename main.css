@@ -346,11 +346,12 @@ button:hover {
     right:1rem;
 }
 
-/*-sek*/
+/*footer*/
 .footer {
     background-color: #D9C4B0;
-    border-top: 1px solid #FFFEF9;
+    border-top: 1px solid #FFFCF8;
     flex-grow: 1;
+    padding-bottom: 10%;
 }
 
 .footer-knap {
@@ -378,18 +379,15 @@ button:hover {
     display: none;
 }
 
-
 .footer-checkbox:checked ~ .footer-indhold {
     display: block;
 }
-
 
 .footer-knap span {
     font-size: 1.5rem;
     margin-right: 10px;
     transition: transform 0.2s ease;
 }
-
 
 .footer-indhold {
     display: none;
