@@ -311,6 +311,8 @@ button:hover {
     padding: 15px 0px;
 }
 
+/* forside find gavekurv*/
+
 .forside__find-gavekurv{
     width:100%;
     height:500px;
@@ -544,6 +546,14 @@ footer details[open] .footer-indhold {
     height:auto;
 }
 
+.designselv__titel{
+    padding-bottom:0.7rem;
+}
+
+.designselv__beskrivelse{
+    padding-bottom:1rem;
+}
+
 .designselv__valgt{
     background: #FFFCF8;
     padding:1.5rem;
@@ -561,6 +571,10 @@ footer details[open] .footer-indhold {
     margin:0.5rem;
     border-bottom: 1px solid #210700;
 }
+
+#tilfojTilKurv {
+    margin-top: 1rem;
+  }
 
 /* designselv menu*/
 .designselv__menu__button {
@@ -708,15 +722,47 @@ footer details[open] .footer-indhold {
         margin: 30px;
     }
 
+    /*find-gavekurv*/
+    .forside__find-gavekurv{
+        height:625px;
+        margin-bottom:1.2rem;
+    }
+
+    .forside__find-gavekurv__item{
+        min-width:250px;
+        height:425px;
+        box-shadow: 0 4px 4px #615959;
+        margin:1rem 0.5rem;
+        
+    }
+    
+    .forside__find-gavekurv__billede-wrapper{
+        width:100%;
+        height:70%;
+    }
+
+    
+    .forside__find-gavekurv__pris{
+        padding-bottom:0.8rem;
+    
+    }
+    
+
     /*designselv kurv*/
     .designselv{
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
     }
 
-    .designselv__billede-container, .designselv__indhold{
-        flex:1;
+    .designselv__indhold{
+        margin-right:8px;
     }
+
+    #tilfojTilKurv {
+        margin-top: 1rem;
+    }
+
+    
 
     /* designselv menu*/
     .designselv__menu__button {
@@ -1006,6 +1052,19 @@ footer details[open] .footer-indhold {
 
     .forside__designselv__tekst {
         width: 50%;
+    }
+
+    /*designselv kurv*/
+    .designselv__indhold{
+        margin-right:50px;
+    }
+
+     /*find-gavekurv*/
+
+    #galleri__prevButton,
+    #galleri__nextButton{
+        padding:1rem;
+        font-size:3rem;
     }
 
     /* forside butikken*/
