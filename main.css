@@ -182,11 +182,6 @@ button:hover {
 
 /*Burgermenu*/
 
-.hejhjem {
-    font-family: Lato;
-    font-weight: 600;
-}
-
 .hamburgermenuen {
     height: 100%;
     /*skal boksen gå hele vejen ned? */
@@ -207,8 +202,7 @@ button:hover {
 
 }
 
-.hamburgermenuen a,
-.dropdown-knappen {
+.hamburgermenuen a {
     font-family: Lato;
     padding: 10px 15px;
     text-decoration: none;
@@ -222,20 +216,9 @@ button:hover {
     width: 100%;
 }
 
-.hamburgermenuen a:hover,
-.dropdown-knappen:hover,
-.dropdown-indhold a:hover {
+.hamburgermenuen a:hover {
     background: #FFB6C1;
     font-weight: bold;
-}
-
-.dropdown-indhold a {
-    font-family: Lato;
-    font-size: 13px;
-    font-weight: 350;
-    color: #273AAA;
-    padding: 10px 65px;
-    /*---- dropdowns længde hen til højre ----*/
 }
 
 .hamburger {
