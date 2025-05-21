@@ -21,7 +21,7 @@ const scrollStep = itemWidth + gap;
 const totalItems = items.length;
 const visibleItems = getImagesPerSlide();
 
-// NY linje: gør det muligt at vise det sidste billede alene
+
 const maxIndex = totalItems - 1;
 
 function animateScroll(targetIndex) {
