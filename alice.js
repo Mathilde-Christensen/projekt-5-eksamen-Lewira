@@ -32,3 +32,6 @@ document.addEventListener('click', function(event) {
         dropdownIndhold.style.display = 'none';
     }
 });
+
+
+

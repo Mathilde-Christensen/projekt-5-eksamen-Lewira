@@ -180,6 +180,83 @@ button:hover {
     font-weight: 900;
 }
 
+/*Burgermenu*/
+
+.hejhjem {
+    font-family: Lato;
+    font-weight: 600;
+}
+
+.hamburgermenuen {
+    height: 100%;
+    /*skal boksen gå hele vejen ned? */
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFFEF9;
+    /*------Eeeeelller FDEFF4?-------*/
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 20px;
+    box-shadow: 2px 0px 0px #F7C7D9;
+    /*------Eeeeller 10 - boksens skygge til højre*/
+    z-index: 1000;
+    /*sørger for at hamburgermenuen er forrest end andet indhold*/
+    font-family: Lato;
+
+}
+
+.hamburgermenuen a,
+.dropdown-knappen {
+    font-family: Lato;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #273AAA;
+    display: block;
+    transition: 0.3s;
+    background: transparent;
+    border: none;
+    text-align: left;
+    width: 100%;
+}
+
+.hamburgermenuen a:hover,
+.dropdown-knappen:hover,
+.dropdown-indhold a:hover {
+    background: #FFB6C1;
+    font-weight: bold;
+}
+
+.dropdown-indhold a {
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 350;
+    color: #273AAA;
+    padding: 10px 65px;
+    /*---- dropdowns længde hen til højre ----*/
+}
+
+.hamburger {
+    background: #FFFEF9;
+    /*sørg fir sammw farve som baggrund, som vi vælger*/
+    padding: 0px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    /*placeringen horisontalt*/
+    font-size: 24px;
+    border: none;
+    z-index: 100;
+}
+
+
+.menu_desktop {
+    display: none;
+}
+
 
 /* hero */
 .hero {
