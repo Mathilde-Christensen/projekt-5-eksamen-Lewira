@@ -27,10 +27,10 @@
       <div class="designselv__billede-container">
         <img src="billeder/liwira gavekurv.webp" alt="Din gavekurv, hvor du kan se, hvad du har lagt i" class="dingavekurv__billede"/>
 
-        <div class="valgte__items">
-          <img class="valgte__items__chokolade" src="billeder/interaktiv/fyldtechoko.webp" alt="fyldte chokolade hjerter">
-          <img class="valgte__items__kanin" src="billeder/interaktiv/kaninbamse.webp" alt="grå kaninbamse">
-          <img class="valgte__items__kop" src="billeder/interaktiv/keramikkop.webp" alt="kermik kop i hvid med dryppende blå glasur">
+        <div class="valgte__items" style="display: none;">
+          <img data-billede="billeder/interaktiv/fyldtechoko.webp" data-id="chokolade" class="valgte__items__chokolade" src="billeder/interaktiv/fyldtechoko.webp" alt="fyldte chokolade hjerter">
+          <img data-billede="billeder/interaktiv/kaninbamse.webp" data-id="kanin"  class="valgte__items__kanin" src="billeder/interaktiv/kaninbamse.webp" alt="grå kaninbamse">
+          <img data-billede="billeder/interaktiv/keramikkop.webp" data-id="kop" class="valgte__items__kop" src="billeder/interaktiv/keramikkop.webp" alt="kermik kop i hvid med dryppende blå glasur">
         </div>
       </div>
 
@@ -42,23 +42,17 @@
 
         <div class="designselv__valgt">
           <h3>DINE VALG</h3>
-          <ul class="designselv__items" id="valgteItems" style="display: none;">
-            <li class="desinselv__items__li" data-navn="Fyldte chokoladerhjerter" data-pris="111">
-              <div class="design__items__kr">kr</div>
-              <div class="design__items__pluds">+ 1</div>
-              <button class="fjern__button">-</button>
+          <ul class="designselv__items" id="valgteItems">
+            <li class="desinselv__items__li" style="display: none;">
+              <button class="fjern__button" data-id="chokolade">+ 1 -</button>
             </li>
 
-            <li class="desinselv__items__li" data-navn="Grå kanin i Økologisk Bomuld" data-pris="279">
-              <div class="design__items__kr">kr</div>
-              <div class="design__items__pluds">+ 1</div>
-              <button class="fjern__button">-</button>
+            <li class="desinselv__items__li" style="display: none;">
+              <button class="fjern__button" data-id="kanin">+ 1 -</button>
             </li>
 
-            <li class="desinselv__items__li" data-navn="Håndlavet kermikkop blå" data-pris="279">
-              <div class="design__items__kr">kr</div>
-              <div class="design__items__pluds">+ 1</div>
-              <button class="fjern__button">-</button>
+            <li class="desinselv__items__li" style="display: none;" >
+              <button class="fjern__button" data-id="kop">+ 1 -</button>
             </li>
 
           </ul>
@@ -108,7 +102,7 @@
             <p class="designselv__udvalg__p">112 kr</p>
 
             <div class="udvalg__button__box">
-              <button class="designselv__udvalg__button">Tilføj</button>
+              <button class="designselv__udvalg__button" class="tilfoj-item" data-id="chokolade">Tilføj</button>
             </div>
 
           </div>
@@ -728,7 +722,7 @@
             <p class="designselv__udvalg__p">279 kr</p>
 
             <div class="udvalg__button__box">
-              <button class="designselv__udvalg__button">Tilføj</button>
+              <button class="designselv__udvalg__button" class="tilfoj-item" data-id="kanin">Tilføj</button>
             </div>
 
           </div>
@@ -796,7 +790,7 @@
             <p class="designselv__udvalg__p">168 kr</p>
 
             <div class="udvalg__button__box">
-              <button class="designselv__udvalg__button">Tilføj</button>
+              <button class="designselv__udvalg__button" class="tilfoj-item" data-id="kop">Tilføj</button>
             </div>
 
           </div>

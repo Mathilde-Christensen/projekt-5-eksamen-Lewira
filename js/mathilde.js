@@ -200,47 +200,69 @@ window.onload = () => {
 // Design selv kurv
 let totalPris = 0;
 
+// 1. Produkter gemt i et array
+const produkter = [
+  { id: "chokolade", navn: "Fyldte chokoladerhjerter", pris: 111 },
+  { id: "kanin", navn: "Grå kanin i Økologisk Bomuld", pris: 279 },
+  { id: "kop", navn: "Håndlavet kermikkop blå", pris: 168 }
+];
 
-document.querySelectorAll(".tilfoj-item").forEach(knap => {
-    knap.addEventListener("click", () => {
-        const navn = knap.getAttribute("data-navn");
-        const pris = parseInt(knap.getAttribute("data-pris"));
-        const billedeSrc = knap.getAttribute("data-billede");
+// 2. Find alle knapper der har data-id og tilknyt klik-funktion
 
+document.querySelectorAll("button[data-id]").forEach(knap => {
+  knap.addEventListener("click", () => {
+    const id = knap.getAttribute("data-id");
+    const produkt = produkter.find(p => p.id === id);
 
-        const billedeContainer = document.querySelector(".designselv__billede-container");
-        billedeContainer.style.display = "block";
-        billedeContainer.innerHTML = `<img src="${billedeSrc}" alt="${navn}" class="dingavekurv__billede"/>`;
+    if (!produkt) return;
 
-        const valgBoks = document.querySelector(".designselv__valgt");
-        valgBoks.style.display = "block";
+    // 3. Vis billedet
+    const billed = document.querySelector(`img[data-id="${id}"]`);
+    if (billed) {
+      billed.style.display = "block";
+      document.querySelector(".valgte__items").style.display = "flex";
+    }
 
-    
-        const itemListe = document.getElementById("valgteItems");
-        const nyLi = document.createElement("li");
-        nyLi.innerHTML = `
-        ${navn} - ${pris} kr.
-        <button class="fjern-item">Fjern</button>
-        `;
-        nyLi.setAttribute("data-pris", pris);
-        itemListe.appendChild(nyLi);
+    // 4. Vis li-tekst
+    const li = document.querySelector(`li[data-id="${id}"]`);
+    if (li && li.style.display !== "flex") {
+      li.style.display = "flex";
 
-        
-        totalPris += pris;
-        document.getElementById("totalPris").textContent = totalPris + " kr.";
+      // Tilføj tekst hvis ikke allerede der
+      if (!li.querySelector(".item-tekst")) {
+        const tekstDiv = document.createElement("div");
+        tekstDiv.classList.add("item-tekst");
+        tekstDiv.textContent = `${produkt.navn} – ${produkt.pris} kr`;
+        li.insertBefore(tekstDiv, li.firstChild);
+      }
 
-        
-        nyLi.querySelector(".fjern-item").addEventListener("click", () => {
-        const prisForDetteItem = parseInt(nyLi.getAttribute("data-pris"));
-        totalPris -= prisForDetteItem;
-        nyLi.remove();
+      // Opdater totalpris
+      totalPris += produkt.pris;
+      document.getElementById("totalPris").textContent = totalPris + " kr.";
 
-        document.getElementById("totalPris").textContent = totalPris + " kr.";
+      // Vis prisliste-sektion
+      document.getElementById("valgteItems").style.display = "block";
+      document.querySelector(".designselv__valgt").style.display = "block";
 
-        if (totalPris === 0) {
-            document.querySelector(".designselv__valgt").style.display = "none";
-            document.querySelector(".designselv__billede-container").style.display = "none";
-        }
+      // Fjern-knap funktion
+      const fjernKnap = li.querySelector(".fjern__button");
+      if (fjernKnap && !fjernKnap.dataset.listenerAdded) {
+        fjernKnap.addEventListener("click", () => {
+          li.style.display = "none";
+          if (billed) billed.style.display = "none";
+
+          totalPris -= produkt.pris;
+          document.getElementById("totalPris").textContent = totalPris + " kr.";
+
+          const alleLi = document.querySelectorAll("#valgteItems li");
+          const altSkjult = [...alleLi].every(el => el.style.display === "none");
+          if (altSkjult) {
+            document.getElementById("valgteItems").style.display = "none";
+            document.querySelector(".valgte__items").style.display = "none";
+          }
         });
-    });
+        fjernKnap.dataset.listenerAdded = true;
+      }
+    }
+  });
 });
