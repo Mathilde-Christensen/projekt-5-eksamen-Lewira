@@ -522,7 +522,6 @@ footer details[open] .footer-indhold {
     padding: 1rem;
     gap:2rem;
     background-color: rgba(217, 196, 176, 0.25);
-    max-height:70vh;
 }
 
 .designselv__billede-container{
@@ -1058,25 +1057,30 @@ button.active {
     /*designselv kurv*/
 
     .designselv{
-        padding:30px 0 30px 0;
+        padding: 0;
     }
 
     .designselv__indhold{
-        flex:0 0 50%;
+        flex: 0 0 50%;
         max-width:500px;
-        padding-top:0.5rem;
+        padding-left: 2rem;
     }
 
-    .dingavekurv__billede{
-        max-height:600px;
-        width: 100%;
-        object-fit:contain;
+    .dingavekurv__billede{ 
+        max-width: 100%;
+        max-height:80vh;
+        object-fit:cover;
         display: block;
+        transform:scale(1.05); /* inspireret af chat - se bilag*/
+        transform-origin: center; /* inspireret af chat - se bilag*/
+        margin-bottom: 0;
+        padding-left:100px;
     }
 
     .designselv__billede-container{
-        flex:1;
-        max-width:600px;
+        overflow:hidden;
+        flex: 0 0 50%;
+        padding: 30px 0 30px 0;
     }
 
      /*find-gavekurv*/
