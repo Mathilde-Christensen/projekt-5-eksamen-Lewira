@@ -522,6 +522,7 @@ footer details[open] .footer-indhold {
     padding: 1rem;
     gap:2rem;
     background-color: rgba(217, 196, 176, 0.25);
+    max-height:70vh;
 }
 
 .designselv__billede-container{
@@ -1055,8 +1056,27 @@ button.active {
     }
 
     /*designselv kurv*/
+
+    .designselv{
+        padding-top:1rem;
+    }
+
     .designselv__indhold{
-        margin-right:50px;
+        flex:0 0 50%;
+        max-width:500px;
+        padding-top:0.5rem;
+    }
+
+    .dingavekurv__billede{
+        max-height:600px;
+        width: 100%;
+        object-fit:contain;
+        display: block;
+    }
+
+    .designselv__billede-container{
+        flex:1;
+        max-width:600px;
     }
 
      /*find-gavekurv*/
