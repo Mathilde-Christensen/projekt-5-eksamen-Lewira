@@ -16,23 +16,23 @@ const nextButton = document.getElementById("galleri__nextButton");
 
 let index = 0;
 const gap = 16;
-const itemWidth = items[0].getBoundingClientRect().width;
-const scrollStep = itemWidth + gap;
 const totalItems = items.length;
-const visibleItems = getImagesPerSlide();
 
-
-const maxIndex = totalItems - 1;
+function getItemWidth(){
+    return items[0].getBoundingClientRect().width + gap;
+}
 
 function animateScroll(targetIndex) {
-    const start = index * scrollStep;
-    const end = targetIndex * scrollStep;
+    const visibleItems = getImagesPerSlide();
+    const itemWidth = getItemWidth();
+    const currentScroll = index * visibleItems * itemWidth;
+    const scrollDistance = targetIndex * visibleItems * itemWidth;
     const steps = 10;
-    const stepSize = (end - start) / steps;
+    const stepSize = (scrollDistance - currentScroll) / steps;
 
     for (let i = 1; i <= steps; i++) {
         setTimeout(() => {
-            track.style.transform = `translateX(-${start + stepSize * i}px)`;
+            track.style.transform = `translateX(-${currentScroll + stepSize * i}px)`;
         }, i * 40);
     }
 
@@ -40,6 +40,8 @@ function animateScroll(targetIndex) {
 }
 
 function scrollGallery(direction) {
+    const visibleItems = getImagesPerSlide();
+    const maxIndex = Math.ceil(totalItems / visibleItems) - 1;
     let newIndex = index + direction;
 
     if (newIndex > maxIndex) newIndex = 0;
