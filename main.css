@@ -75,6 +75,10 @@ button:hover {
     background-color: #C39B7F;
 }
 
+main {
+    background-color: #FFFCF8;
+}
+
 /* Header */
 .top__logo__img {
     width: 6.6875rem;
@@ -121,7 +125,6 @@ button:hover {
 
 #soegefeltButton {
     background-color: transparent;
-    z-index: 10;
     width: 30px;
     height: 15px;
     border-radius: 0px;
@@ -189,12 +192,12 @@ button:hover {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #FFFEF9;
+    background-color: #FFFCF8;
     /*------Eeeeelller FDEFF4?-------*/
     overflow-x: hidden;
     transition: 1s;
     padding-top: 20px;
-    box-shadow: 2px 0px 0px #F7C7D9;
+    box-shadow: 2px 0px 0px #D9C4B0;
     /*------Eeeeller 10 - boksens skygge til højre*/
     z-index: 1000;
     /*sørger for at hamburgermenuen er forrest end andet indhold*/
@@ -207,7 +210,7 @@ button:hover {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 15px;
-    color: #273AAA;
+    color: #210700;
     display: block;
     transition: 0.3s;
     background: transparent;
@@ -217,28 +220,29 @@ button:hover {
 }
 
 .hamburgermenuen a:hover {
-    background: #FFB6C1;
+    background: #72483C;
     font-weight: bold;
 }
 
 .hamburger {
-    background: #FFFEF9;
-    /*sørg fir sammw farve som baggrund, som vi vælger*/
+    background: transparent;
     padding: 0px;
     cursor: pointer;
-    position: absolute;
     left: 20px;
     top: 16px;
-    /*placeringen horisontalt*/
     font-size: 24px;
     border: none;
     z-index: 100;
+    color: #210700;
+    width: 65px;
+    height: 30px;
+    margin: 8px 0px 0px 20px;
 }
 
-
-.menu_desktop {
-    display: none;
+.hamburger:hover {
+    background: transparent;
 }
+
 
 
 /* hero */
@@ -454,8 +458,13 @@ button:hover {
 .footer-indhold {
     display: none;
     padding-left: 60px;
-    font-size: 1.3rem;
     padding-top: 5px;
+    color: #210700;
+    font-family: Inter;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.875rem;
 }
 
 footer details[open] .footer-indhold {
@@ -482,12 +491,6 @@ footer details[open] .footer-indhold {
 }
 
 
-.kontakt_liwira, .abningstider_liwira{
-    font-family: Archivo;
-    color:#000;
-}
-
-
 .footer_logo {
     width:150px;
     height: 40px;
@@ -508,6 +511,7 @@ footer details[open] .footer-indhold {
     margin-top: 6%;
     margin-bottom: 5%;
 }
+
 
 
 
@@ -656,7 +660,7 @@ footer details[open] .footer-indhold {
 
 button.active {
     font-weight: 900;
-  }
+}
 
 
 @media (min-width: 600px) {
@@ -1004,7 +1008,11 @@ button.active {
     #soegeResultaterDesktop li a:hover {
         color: #72483C;
         font-weight: 900;
-    }    
+    }
+    
+    .hamburger {
+       display: none;
+    }
 
     /* hero */
     .hero__billede__mobil {
