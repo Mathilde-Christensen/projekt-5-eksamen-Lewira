@@ -572,7 +572,7 @@ footer details[open] .footer-indhold {
 
 #tilfojTilKurv {
     margin-top: 1rem;
-  }
+}
 
 /* designselv menu*/
 
@@ -672,6 +672,9 @@ footer details[open] .footer-indhold {
 button.active {
     font-weight: 900;
 }
+
+/* designselv interaktiv*/
+
 
 
 @media (min-width: 600px) {
