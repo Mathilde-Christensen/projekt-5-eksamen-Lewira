@@ -177,4 +177,11 @@ function designSelvMenu(clickedButton) {
     if (targetDiv) {
       targetDiv.style.display = "block";
     }
-  }
+}
+
+window.onload = () => {
+    const defaultButton = document.querySelector('[data-target="chokolade"]');
+    if (defaultButton) {
+      designSelvMenu(defaultButton);
+    }
+  };
