@@ -75,36 +75,36 @@ let soegResultater = [
 
 
 
-function filterLinks() { //Funktionen starter når man skriver i inputfeltet ( onkeyup="filterLinks()"i HTML)
-    let input = document.getElementById("indputFelt").value.toLowerCase(); // laver en var af værdien fra indputtet som kommer i feltet samt laver det til små bugstaver
-    let liste = document.getElementById("soegeResultater"); // laver en var ud af soegeResultater ul i html
-    liste.innerHTML = ""; // Funktionen læser det hele forfra hver gang – fordi den sletter det der tidligere var – og så læser den det der står nu
+function filterLinks() { 
+    let input = document.getElementById("indputFelt").value.toLowerCase(); 
+    let liste = document.getElementById("soegeResultater"); 
+    liste.innerHTML = ""; 
 
-    if (input === "") { // søger for der ikke bliver vist noget når der ikke er skrevet noget i enputdeltet return stopper funktionen
+    if (input === "") { 
         liste.innerHTML = "";  
         return; 
     }
 
-    let resultater = []; // laver en var af en kom liste som senere kommer flere elementer i
+    let resultater = []; 
 
-    for (let i = 0; i < soegResultater.length; i++) { // for loopet tjekker arrayen af soegResultater om der er match med det der står i indput feltet og soegResultater
-        if (soegResultater[i].displayName.toLowerCase().includes(input)) { //tjekker om søgeordet findes didisplayName
-            resultater.push(soegResultater[i]); //gemmer match i resultater 
+    for (let i = 0; i < soegResultater.length; i++) { 
+        if (soegResultater[i].displayName.toLowerCase().includes(input)) { 
+            resultater.push(soegResultater[i]); 
         }
     }
 
-    if (resultater.length === 0) { // hvis der ikke findes et nogen elementer i resultater listen skrives der en besked på siden
+    if (resultater.length === 0) { 
         liste.innerHTML = `<li class="no-result">
         Der blev desværre ikke fundet noget resultat. Kontrollér stavemåde eller brug et andet udtryk
         </li>`;
     } else {
-        for (let i = 0; i < resultater.length; i++) { // for loopet tjekker resultater listen igennem som er lavet efter soegResultater match
-            let li = document.createElement("li"); // laver det til et li element 
-            let a = document.createElement("a"); // laver det til et a links så man kan trykke på linket
-            a.href = resultater[i].link; // tilføjer det rette link til resulatet
-            a.textContent = resultater[i].displayName; //tilføjer link teksten til sidne
-            li.appendChild(a); //tiltøjer a til dom
-            liste.appendChild(li); //tilføjer li til ul'en i dom'en
+        for (let i = 0; i < resultater.length; i++) { 
+            let li = document.createElement("li"); 
+            let a = document.createElement("a"); 
+            a.href = resultater[i].link; 
+            a.textContent = resultater[i].displayName; 
+            li.appendChild(a); 
+            liste.appendChild(li);
         }
     }
 }
@@ -165,6 +165,9 @@ function filterLinksDesktop() {
     }
 }
 
+
+//design selv menu
+
 function designSelvMenu(clickedButton) {
     const targetId = clickedButton.getAttribute("data-target");
   
@@ -192,3 +195,52 @@ window.onload = () => {
       designSelvMenu(defaultButton);
     }
 };
+
+
+// Design selv kurv
+let totalPris = 0;
+
+
+document.querySelectorAll(".tilfoj-item").forEach(knap => {
+    knap.addEventListener("click", () => {
+        const navn = knap.getAttribute("data-navn");
+        const pris = parseInt(knap.getAttribute("data-pris"));
+        const billedeSrc = knap.getAttribute("data-billede");
+
+
+        const billedeContainer = document.querySelector(".designselv__billede-container");
+        billedeContainer.style.display = "block";
+        billedeContainer.innerHTML = `<img src="${billedeSrc}" alt="${navn}" class="dingavekurv__billede"/>`;
+
+        const valgBoks = document.querySelector(".designselv__valgt");
+        valgBoks.style.display = "block";
+
+    
+        const itemListe = document.getElementById("valgteItems");
+        const nyLi = document.createElement("li");
+        nyLi.innerHTML = `
+        ${navn} - ${pris} kr.
+        <button class="fjern-item">Fjern</button>
+        `;
+        nyLi.setAttribute("data-pris", pris);
+        itemListe.appendChild(nyLi);
+
+        
+        totalPris += pris;
+        document.getElementById("totalPris").textContent = totalPris + " kr.";
+
+        
+        nyLi.querySelector(".fjern-item").addEventListener("click", () => {
+        const prisForDetteItem = parseInt(nyLi.getAttribute("data-pris"));
+        totalPris -= prisForDetteItem;
+        nyLi.remove();
+
+        document.getElementById("totalPris").textContent = totalPris + " kr.";
+
+        if (totalPris === 0) {
+            document.querySelector(".designselv__valgt").style.display = "none";
+            document.querySelector(".designselv__billede-container").style.display = "none";
+        }
+        });
+    });
+});

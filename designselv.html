@@ -20,11 +20,20 @@
 
 
   <main>
+
     <!----Kirja-->
     <div class="designselv">
+
       <div class="designselv__billede-container">
         <img src="billeder/liwira gavekurv.webp" alt="Din gavekurv, hvor du kan se, hvad du har lagt i" class="dingavekurv__billede"/>
+
+        <div class="valgte__items">
+          <img class="valgte__items__chokolade" src="billeder/interaktiv/fyldtechoko.webp" alt="fyldte chokolade hjerter">
+          <img class="valgte__items__kanin" src="billeder/interaktiv/kaninbamse.webp" alt="grå kaninbamse">
+          <img class="valgte__items__kop" src="billeder/interaktiv/keramikkop.webp" alt="kermik kop i hvid med dryppende blå glasur">
+        </div>
       </div>
+
       <div class="designselv__indhold">
         <h2 class="designselv__titel">LAV DIN EGEN GAVEKURV</h2>
         <p class="designselv__beskrivelse">
@@ -33,11 +42,31 @@
 
         <div class="designselv__valgt">
           <h3>DINE VALG</h3>
-          <ul class="designselv__items"id="valgteItems">
+          <ul class="designselv__items" id="valgteItems" style="display: none;">
+            <li class="desinselv__items__li" data-navn="Fyldte chokoladerhjerter" data-pris="111">
+              <div class="design__items__kr">kr</div>
+              <div class="design__items__pluds">+ 1</div>
+              <button class="fjern__button">-</button>
+            </li>
+
+            <li class="desinselv__items__li" data-navn="Grå kanin i Økologisk Bomuld" data-pris="279">
+              <div class="design__items__kr">kr</div>
+              <div class="design__items__pluds">+ 1</div>
+              <button class="fjern__button">-</button>
+            </li>
+
+            <li class="desinselv__items__li" data-navn="Håndlavet kermikkop blå" data-pris="279">
+              <div class="design__items__kr">kr</div>
+              <div class="design__items__pluds">+ 1</div>
+              <button class="fjern__button">-</button>
+            </li>
 
           </ul>
+
           <p><strong>Pris i alt:</strong> <span id="totalPris">0 kr.</span></p>
+
           <button id="tilfojTilKurv">Tilføj til kurv</button>
+
         </div>
       </div>
     </div>
