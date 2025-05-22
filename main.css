@@ -700,7 +700,39 @@ button.active {
 
 /* designselv interaktiv*/
 
+.valgte__items__chokolade {
+    width: 20%;
+    position: absolute;
+}
 
+.valgte__items__kanin {
+    width: 20%;
+}
+
+.valgte__items__kop {
+    width: 20%;
+}
+
+.valgte__items {
+    display: flex;
+    justify-content: center;
+}
+
+.fjern__button {
+    background-color: transparent;
+    color: #210700;
+    font-size: medium;
+    width: 40px;
+}
+
+.desinselv__items__li {
+    color: #210700;
+    font-family: Inter;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.875rem;
+}
 
 @media (min-width: 600px) {
     
