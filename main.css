@@ -413,6 +413,18 @@ main {
 }
 
 /*footer*/
+
+.footer__top {
+    width: 100%;
+    background-color: #C39B7F;
+    height: 30px;
+    padding: 20px 3px;
+}
+
+.footer__top__img {
+    width: 100%;
+}
+
 .footer {
     background-color: #D9C4B0;
     border-top: 1px solid #FFFCF8;
