@@ -177,6 +177,13 @@ function designSelvMenu(clickedButton) {
     if (targetDiv) {
       targetDiv.style.display = "block";
     }
+
+    const allButtons = document.querySelectorAll('[data-target]');
+    allButtons.forEach(button => {
+        button.classList.remove("active");
+    });
+
+    clickedButton.classList.add("active");
 }
 
 window.onload = () => {
@@ -184,4 +191,4 @@ window.onload = () => {
     if (defaultButton) {
       designSelvMenu(defaultButton);
     }
-  };
+};

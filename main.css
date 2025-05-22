@@ -654,6 +654,10 @@ footer details[open] .footer-indhold {
     align-items: center;
 }
 
+button.active {
+    font-weight: 900;
+  }
+
 
 @media (min-width: 600px) {
     
