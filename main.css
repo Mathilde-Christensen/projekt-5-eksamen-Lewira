@@ -560,6 +560,11 @@ footer details[open] .footer-indhold {
   }
 
 /* designselv menu*/
+
+.deslingselv__gallery__boks {
+    background-color: #FFFCF8;
+}
+
 .designselv__menu__button {
     color: #72483C;
     font-family: Inter;
