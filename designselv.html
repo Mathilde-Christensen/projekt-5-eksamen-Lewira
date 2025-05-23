@@ -17,11 +17,96 @@
 </head>
 
 <body>
+  <header>
+    <div class="header__top">
+
+        <button class="hamburger" onclick="openNav(0)">
+    
+            <svg width="40" height="17" viewBox="0 0 55 24" fill="none">              
+                <rect id="streg_1" width="40" height="2" fill="#210700"></rect>         
+                <rect id="streg_2" y="11" width="40" height="2" fill="#210700"></rect>
+                <rect id="streg_3" y="22" width="40" height="2" fill="#210700"></rect>
+            </svg>  <!--størrelsen, højden og farven for mine streger - hamburgermenuen-->  
+
+        </button>
+
+        <div id="minHamburgermenu" class="hamburgermenuen">
+            <a href="designselv.html">Gavekurve</a>
+            <a href="index.html">Sortiment</a>
+            <a href="index.html">Erhverv</a>
+            <a href="index.html">Om os</a>
+            <a href="index.html">Kontakt</a>
+        </div>
+
+        <div class="header__top__logo">
+            <img class="top__logo__img" src="billeder/logo__lewira.webp" alt="Liwiras logo">
+        </div>
+
+        <div class="header__mobil__top">
+
+            <div class="header__mobil__ikoner">
+                <!-- Mathilde -->  
+                <div id="soegefelt">
+                    <button id="soegefeltButton" onclick="soeFeltIndput()"><img class="soegefeltBillede" src="billeder/soegikon.webp" alt="forstørrelsslag som søge ikon"></button>
+                </div>
+
+                <div class="desktop__ikoner__kurv">
+                    <img class="desktop__kurv__img" src="billeder/kurvikon.webp" alt="ikon af kurv">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="header__mobil__bottom"></div>
+
+    <div class="header__desktop">
+        
+        <div class="header__desktop__bottom">
+
+            <div class="header__desktop__left"></div>
+
+            <nav class="header__desktop__nav">
+                <ul class="header__desktop__ul">
+                    <li class="nav__desktop__dropdown">
+                        <a class="desktop__dropdown__link" href="index.html">Gavekurve <img src="billeder/dropdown__pil.webp" alt="pil ned"></a>
+                        <ul class="desktop__dropdown__ul">
+                            <li class="desktop__dropdown__li"><a class="desktop__dropdown__link" href="designselv.html">Design selv gavekurv</a></li>
+                            <li class="desktop__dropdown__li"><a class="desktop__dropdown__link" href="sammensatte.html">Sammensatte gavekurve</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__desktop__li">Sortiment</li>
+                    <li class="nav__desktop__li">Erhverv</li>
+                    <li class="nav__desktop__li">Om os</li>
+                    <li class="nav__desktop__li">Kontakt</li>
+                </ul>
+            </nav>
+
+            <div class="header__desktop__ikoner">
+
+                <!-- Mathilde -->  
+                <div id="soegefeltDesktop">
+                    <button id="soegefeltButtonDesktop" onclick="soeFeltIndputDesktop()"><img class="soegefeltBilledeDesktop" src="billeder/soegikon.webp" alt="forstørrelsslag som søge ikon"></button>
+                </div>
+
+                <div class="desktop__ikoner__kurv">
+                    <img class="desktop__kurv__img" src="billeder/kurvikon.webp" alt="ikon af kurv">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>  
+
+  </header>
 
 
   <main>
 
-    <!----Kirja-->
+    <!--Kirja-->
+
     <div class="designselv">
 
       <div class="designselv__billede-container">
@@ -31,8 +116,9 @@
           <img data-billede="billeder/interaktiv/kaninbamse.webp" data-id="kanin"  class="valgte__items__kanin" src="billeder/interaktiv/kaninbamse.webp" alt="grå kaninbamse" style="display: none;">
           <img data-billede="billeder/interaktiv/keramikkop.webp" data-id="kop" class="valgte__items__kop" src="billeder/interaktiv/keramikkop.webp" alt="kermik kop i hvid med dryppende blå glasur" style="display: none;">
         </div>
-
-        <img src="billeder/liwira gavekurv.webp" alt="Din gavekurv, hvor du kan se, hvad du har lagt i" class="dingavekurv__billede"/>
+        <div class="billede-wrapper">
+          <img src="billeder/liwiragavekurv.webp" alt="Din gavekurv, hvor du kan se, hvad du har lagt i" class="dingavekurv__billede">
+        </div>
       </div>
 
       <div class="designselv__indhold">
@@ -103,7 +189,7 @@
             <p class="designselv__udvalg__p">112 kr.</p>
 
             <div class="udvalg__button__box">
-              <button class="designselv__udvalg__button" class="tilfoj-item" data-id="chokolade">Tilføj</button>
+              <button class="designselv__udvalg__button" data-id="chokolade">Tilføj</button>
             </div>
 
           </div>
@@ -115,7 +201,7 @@
               <h3 class="udvalg__img__h3">16 hjerteformede bidder med en sprød skal af mørk kvalitetschokolade og fyld af cremet nougat, ristede hasselnødder og blød karamel. 
                 <br><br>Fremstillet af nøje udvalgte råvarer med fokus på en intens og ren smagsoplevelse.
                 <br><br> Sprød chokoladeskal udenpå, blød kerne indeni.
-              </p>
+              </h3>
             </div>
 
             <h3 class="designselv__udvalg__h3">Mørke fyldte chokoladehjerter</h3>
@@ -413,7 +499,6 @@
           
         </div>
           
-        </div>
 
       </div>
       
@@ -723,7 +808,7 @@
             <p class="designselv__udvalg__p">279 kr.</p>
 
             <div class="udvalg__button__box">
-              <button class="designselv__udvalg__button" class="tilfoj-item" data-id="kanin">Tilføj</button>
+              <button class="designselv__udvalg__button" data-id="kanin">Tilføj</button>
             </div>
 
           </div>
@@ -791,7 +876,7 @@
             <p class="designselv__udvalg__p">168 kr.</p>
 
             <div class="udvalg__button__box">
-              <button class="designselv__udvalg__button" class="tilfoj-item" data-id="kop">Tilføj</button>
+              <button class="designselv__udvalg__button" data-id="kop">Tilføj</button>
             </div>
 
           </div>
@@ -888,6 +973,56 @@
   </main>
 
   <footer>
+
+    <div class="footer__top">
+        <img class="footer__top__img" src="billeder/trustpilot.webp" alt="framragende 4,5 stjerner 572 anmendelser på Trustpolot">
+    </div>
+
+    <div class="footer__bottom">
+
+        <img class="footer_logo" src="billeder/logo__lewira.webp" alt="liwira_logo">
+
+        <div class="footer-sektion">
+            <div class="footer-knap" onclick="toggleCheckbox('liwira-checkbox')">
+                <span class="span__knap f">+</span>
+                <h3 class="kontakt_liwira">Kontakt</h3>
+            </div>
+            <input type="checkbox" id="liwira-checkbox" class="footer-checkbox">
+            <div id="liwira-indhold" class="footer-indhold">
+                <p>+45 2426 7971</p>
+                <p>kontakt@dinpejs.dk</p>
+                <p>Jernbanegade 16, 5550 Langeskov</p>
+            </div>
+        </div>
+    
+        <div class="footer-sektion">
+            <div class="footer-knap" onclick="toggleCheckbox('follow-checkbox')">
+                <span class="span__knap">+</span>
+                <h3 class="abningstider_liwira">Åbningstider</h3>
+            </div>
+            <input type="checkbox" id="follow-checkbox" class="footer-checkbox">
+            <div id="follow-indhold" class="footer-indhold">
+                <div>
+                    <p>Man-fre 11:00-17:00</p>
+                    <p>Lør 10:00-12:00</p>
+                    <p>Søn lukket</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-sektion">
+            <div class="footer-knap" onclick="toggleCheckbox('social-checkbox')">
+                <span class="span__knap">+</span>
+                <h3 class="folg_os">Følg os her</h3>
+            </div>
+            <input type="checkbox" id="social-checkbox" class="footer-checkbox">
+            <div id="social-indhold" class="footer-indhold">
+                <img class="footer_socialemedier" src="billeder/socialemedier.webp" alt="liwira_socialemedier">
+            </div>
+        </div>
+
+    </div>
+
 
   </footer>
 </body>

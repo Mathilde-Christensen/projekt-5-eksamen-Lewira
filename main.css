@@ -555,8 +555,6 @@ footer details[open] .footer-indhold {
 .designselv{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    gap:2rem;
     background-color: rgba(217, 196, 176, 0.25);
 }
 
@@ -570,11 +568,11 @@ footer details[open] .footer-indhold {
 }
 
 .designselv__titel{
-    padding-bottom:0.7rem;
+    padding:0 1.3rem 1rem 1.3rem;
 }
 
 .designselv__beskrivelse{
-    padding-bottom:1rem;
+    padding:0 1.3rem 1rem 1.3rem;
 }
 
 .designselv__valgt{
@@ -603,6 +601,7 @@ footer details[open] .footer-indhold {
 
 .deslingselv__gallery__boks {
     background-color: #FFFCF8;
+    padding-bottom: 0.5rem;
 }
 
 .designselv__menu__button {
@@ -830,7 +829,7 @@ button.active {
     }
 
     .designselv__indhold{
-        margin-right:8px;
+        margin-right:1rem;
     }
 
     #tilfojTilKurv {
@@ -876,6 +875,10 @@ button.active {
 
     .designselv__udvalg__button {
         margin: 0px 0px 15px 0px;
+    }
+
+    .deslingselv__gallery__boks{
+        padding-bottom: 1rem;
     }
 
     /* footer */
@@ -1154,31 +1157,28 @@ button.active {
 
     /*designselv kurv*/
 
-    .designselv{
-        padding: 0;
-    }
-
     .designselv__indhold{
         flex: 0 0 50%;
-        max-width:500px;
-        padding-left: 2rem;
+        max-width:50%;
+        padding: 0 10rem 0 2rem;
+    }
+
+    .billede-wrapper{
+        height:70vh;
+        overflow:hidden;
+        position: relative;
     }
 
     .dingavekurv__billede{ 
+        position: relative;
+        top: -15%;
         max-width: 100%;
         max-height:80vh;
-        object-fit:cover;
-        display: block;
-        transform:scale(1.05); /* inspireret af chat - se bilag*/
-        transform-origin: center; /* inspireret af chat - se bilag*/
-        margin-bottom: 0;
-        padding-left:100px;
     }
 
     .designselv__billede-container{
         overflow:hidden;
         flex: 0 0 50%;
-        padding: 30px 0 30px 0;
     }
 
      /*find-gavekurv*/
@@ -1216,6 +1216,11 @@ button.active {
         width: auto;
         margin: 20px;
     }
+
+    .deslingselv__gallery__boks{
+        padding-bottom: 3rem;
+    }
+
 
     /* footer */
     .footer__top {
