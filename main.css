@@ -76,7 +76,7 @@ button:hover {
 }
 
 main {
-    background-color: #FFFCF8;
+    background-color: #F5F0EB;
 }
 
 /* Header */
@@ -188,26 +188,19 @@ main {
 
 .hamburgermenuen {
     height: 100%;
-    /*skal boksen gå hele vejen ned? */
     width: 0;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #FFFCF8;
-    /*------Eeeeelller FDEFF4?-------*/
     overflow-x: hidden;
     transition: 1s;
     padding-top: 20px;
     box-shadow: 2px 0px 0px #D9C4B0;
-    /*------Eeeeller 10 - boksens skygge til højre*/
-    z-index: 1000;
-    /*sørger for at hamburgermenuen er forrest end andet indhold*/
-    font-family: Lato;
 
 }
 
 .hamburgermenuen a {
-    font-family: Lato;
     padding: 10px 15px;
     text-decoration: none;
     font-size: 15px;
@@ -318,7 +311,7 @@ main {
     padding: 0px 20px 15px 20px;
 }
 .forsiden__butikken__tekst {
-    margin: 0px 20px 15px 20px;
+    padding: 0px 20px 15px 20px;
 }
 .forside__butikken__p {
     padding: 15px 0px;
