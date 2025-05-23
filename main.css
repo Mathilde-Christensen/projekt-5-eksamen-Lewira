@@ -1055,11 +1055,13 @@ button.active {
         display: none;
         position: absolute;
         z-index: 10;
-        border-radius: 1.25rem;
         font-size: 0.8rem;
+        width: 190px;
+        padding: 10px 10px;
     }
     .desktop__dropdown__li {
         padding: 5px 0px;
+
     }
     .desktop__dropdown__link:hover {
         color: #72483C;
@@ -1067,6 +1069,7 @@ button.active {
     }
     .nav__desktop__dropdown:hover .desktop__dropdown__ul {
         display: block;
+        background-color: #D9C4B0;
     }
 
     .header__desktop__bottom {
