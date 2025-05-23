@@ -219,7 +219,7 @@ document.querySelectorAll("button[data-id]").forEach(knap => {
     // 3. Vis billedet
     const billed = document.querySelector(`img[data-id="${id}"]`);
     if (billed) {
-      billed.style.display = "block";
+      billed.style.display = "flex";
       document.querySelector(".valgte__items").style.display = "flex";
     }
 
