@@ -774,6 +774,7 @@ button.active {
         font-weight: 700;
         line-height: normal;
     }
+
     h2 {
         color: #210700;
         font-family: Merriweather;
@@ -800,6 +801,7 @@ button.active {
         font-weight: 400;
         line-height: 1rem; /* 150% */
     }
+
     button {
         width: 130px;
         height: 39px;
@@ -967,6 +969,7 @@ button.active {
         font-weight: 700;
         line-height: normal;
     }
+
     h2 {
         color: #210700;
         font-family: Merriweather;
@@ -975,6 +978,7 @@ button.active {
         font-weight: 700;
         line-height: normal;
     }
+
     h3 {
         color: #210700;
         font-family: Inter;
@@ -983,6 +987,7 @@ button.active {
         font-weight: 700;
         line-height: normal;
     }
+
     p {
         color: #210700;
         font-family: Inter;
@@ -991,11 +996,13 @@ button.active {
         font-weight: 400;
         line-height: 1.875rem; /* 150% */
     }
+
     button {
         width: 185px;
         height: 50px;
         font-size: 1rem;
     }
+    
     /*header*/
     .top__logo__img {
         width: 182px;
