@@ -748,6 +748,10 @@ button.active {
     font-weight: 400;
 }
 
+.fjern__button:hover {
+    background-color: transparent;
+}
+
 .desinselv__items__li {
     color: #210700;
     font-family: Inter;
