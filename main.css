@@ -592,7 +592,7 @@ footer details[open] .footer-indhold {
 .designselv__items li{
     display: flex;
     justify-content: space-between;
-    margin:0.rem;
+    margin:0;
     border-bottom: 1.5px solid #cdcdcd;
 }
 
