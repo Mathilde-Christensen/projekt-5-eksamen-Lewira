@@ -1,4 +1,4 @@
-function getImagesPerSlide() {
+function getImagesPerSlide() { /* funktion inspireret af ChatGBT - se bilag*/
     if (window.matchMedia("(max-width: 480px)").matches) {
         return 1;
     }
