@@ -197,6 +197,7 @@ main {
     transition: 1s;
     padding-top: 20px;
     box-shadow: 2px 0px 0px #D9C4B0;
+    z-index: 11;
 
 }
 
@@ -211,10 +212,16 @@ main {
     border: none;
     text-align: left;
     width: 100%;
+    font-family: Inter;
+}
+
+.hamburgermenuen a:first-child{
+    padding-top:40px;
 }
 
 .hamburgermenuen a:hover {
-    background: #72483C;
+    background:none;
+    color: #72483C;
     font-weight: bold;
 }
 
@@ -249,6 +256,7 @@ main {
 }
 .hero__billede__disktop {
     display: none;
+    z-index:0;
 }
 .hero__billede__mobil {
     width: 100%;
@@ -256,6 +264,7 @@ main {
     display: block;
     position: absolute;
     object-fit: cover;
+    z-index:0;
 }
 .hero__text {
     width: 100%;
