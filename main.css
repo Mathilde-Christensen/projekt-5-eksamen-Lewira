@@ -226,7 +226,7 @@ main {
     top: 16px;
     font-size: 24px;
     border: none;
-    z-index: 100;
+    z-index: 1000;
     color: #210700;
     width: 65px;
     height: 30px;
