@@ -339,7 +339,7 @@ main {
 }
 
 .forside__find-gavekurv__h2{
-    color:#FFFCF8;
+    color:#210700;
     padding:0 5px 0 5px;
     margin-bottom:1rem;
 }
@@ -424,7 +424,7 @@ main {
     background:none;
     border:none;
     font-size:2rem;
-    color:#FFFCF8;
+    color:#210700;
 }
 
 #galleri__prevButton:hover, 
@@ -837,6 +837,10 @@ button.active {
         margin-bottom:1.2rem;
     }
 
+    .forside__find-gavekurv__h2{
+        padding-left:5px;
+    }
+
     .forside__find-gavekurv__item{
         min-width:250px;
         height:425px;
@@ -1214,6 +1218,11 @@ button.active {
         padding: 30px 60px 30px 60px;
         align-items: center;
     }
+
+    .forside__find-gavekurv__h2{
+        padding-left:60px;
+    }
+
 
     .forside__designselv__video {
         width: 50%;
