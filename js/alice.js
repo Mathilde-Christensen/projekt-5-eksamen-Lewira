@@ -21,19 +21,6 @@ function closeNavOutside(event) {
     });
 }
 
-let dropdown = document.querySelector('.dropdown-knappen');
-let dropdownIndhold = document.querySelector('.dropdown-indhold');
-
-dropdown.addEventListener('click', function(event) {
-    event.stopPropagation();
-    dropdownIndhold.style.display = dropdownIndhold.style.display === 'block' ? 'none' : 'block';
-});
-
-document.addEventListener('click', function(event) {
-    if (!dropdown.contains(event.target) && !dropdownIndhold.contains(event.target)) {
-        dropdownIndhold.style.display = 'none';
-    }
-});
 
 
 
