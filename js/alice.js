@@ -1,4 +1,4 @@
-//Dnne JavaScript del er udarbejde ved gjælp af ChatGBT se mappen med ChatGBT promts - Alice 
+//Denne JavaScript del er udarbejde ved hjælp af ChatGBT - se mappen med ChatGBT promts - Alice 
 
 let hamburgermenuens = [document.getElementById("minHamburgermenu")];
 let hamburgers = [document.querySelector(".hamburger")];
