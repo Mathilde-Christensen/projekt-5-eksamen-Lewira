@@ -1,3 +1,5 @@
+//Dnne JavaScript del er udarbejde ved gjælp af ChatGBT se mappen med ChatGBT promts - Alice 
+
 let hamburgermenuens = [document.getElementById("minHamburgermenu")];
 let hamburgers = [document.querySelector(".hamburger")];
 
