@@ -1,3 +1,5 @@
+//Dnne JavaScript del er udarbejde ved gjælp af ChatGBT se mappen med ChatGBT promts - Mathilde - kodnind side 1
+
 function soeFeltIndput() { 
     let indputFelt = document.getElementById("indputFelt"); 
     let lukKnap = document.getElementById("lukKnap"); 
@@ -167,6 +169,7 @@ function filterLinksDesktop() {
 
 
 //design selv menu
+//Dnne JavaScript del er udarbejde ved gjælp af ChatGBT se mappen med ChatGBT promts - Mathilde - kodnind side 1-9
 
 function designSelvMenu(clickedButton) {
     const targetId = clickedButton.getAttribute("data-target");
@@ -198,6 +201,7 @@ window.onload = () => {
 
 
 // Design selv kurv
+//Dnne JavaScript del er udarbejde ved gjælp af ChatGBT se mappen med ChatGBT promts - Mathilde - kodnind side 10-24
 let totalPris = 0;
 
 // 1. Produkter gemt i et array
