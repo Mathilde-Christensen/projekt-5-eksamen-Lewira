@@ -6,7 +6,7 @@ function getImagesPerSlide() {
     if (window.matchMedia("(max-width: 1024px)").matches) {
         return 2;
     } else {
-        return 3;
+        return 5;
     }
 }
 
